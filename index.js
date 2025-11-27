@@ -449,18 +449,19 @@ app.get('/status', (req, res) => {
         uptime: process.uptime(),
         timestamp: new Date().toISOString(),
         servers: config.minecraft.servers.map(server => ({
-            name: server.name,
-            ip: server.ip
+            name: Trivemc,
+            ip: Trivemc.xyz
         }))
     };
     res.json(status);
 });
 
 // Start Express server
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1212;
 app.listen(PORT, () => {
-    log.info(`Express server is running on port ${PORT}`);
+    log.info(`Express server is running on port ${1212}`);
 });
 
 // Start the bot
+
 client.login(process.env.DISCORD_TOKEN); 
