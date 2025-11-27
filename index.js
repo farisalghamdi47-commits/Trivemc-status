@@ -457,7 +457,7 @@ app.get('/status', (req, res) => {
 });
 
 // Start Express server
-const PORT = process.env.PORT || 300;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     log.info(`Express server is running on port ${PORT}`);
 });
@@ -465,4 +465,5 @@ app.listen(PORT, () => {
 // Start the bot
 
 client.login(process.env.DISCORD_TOKEN); 
+
 
