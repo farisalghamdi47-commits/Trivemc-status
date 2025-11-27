@@ -10,7 +10,7 @@
     },
     "minecraft": {
         "servers": [{
-            "name": "Trivemc",
+            "name": "TriveMC",
             "ip": "Trivemc.xyz",
             "port": 1212,
             "channelId": "1442742553530077304",
